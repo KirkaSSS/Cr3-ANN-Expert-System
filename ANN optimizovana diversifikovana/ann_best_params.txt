@@ -1,0 +1,10 @@
+# Best hyperparameters from Optuna TPE search
+# Best CV R² = 0.5029
+
+hidden1 = 128
+hidden2 = 128
+dropout1 = 0.34243611386932515
+dropout2 = 0.20835093912760588
+lr = 0.005532496914298506
+weight_decay = 0.004048966222584676
+batch_size = 64
