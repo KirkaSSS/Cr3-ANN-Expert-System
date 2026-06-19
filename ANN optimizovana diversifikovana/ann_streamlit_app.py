@@ -1,7 +1,7 @@
 """
 Streamlit GUI for Cr³⁺ Phosphor ANN Dq/B Predictor
 =====================================================
-Author: Snežana Đurković
+Author: Snežana Đurković, Prof. Dr. Miroslav Dramićanin, Dr. Zoran Ristić
 Year:   2026
 INN Vinča, Belgrade — OMAS Group
 
@@ -262,10 +262,11 @@ with st.sidebar:
     ```
     """)
     st.divider()
-    st.markdown("**Authors**  \nSnežana Đurković  \nProf. Dr. M. Dramićanin")
+    st.markdown("**Authors**  \nSnežana Đurković  \nProf. Dr. M. Dramićanin  \nDr. Zoran Ristić")
     st.markdown("**OMAS Group · INN Vinča · Belgrade**")
     st.divider()
     run_btn = st.button("▶️ Run ANN Pipeline", type="primary", use_container_width=True)
+    st.warning("⚠️ **Note:** The ANN pipeline trains 100+ model instances (10×10-fold ensemble). Execution time on CPU is approximately 30–60 minutes depending on hardware. Please be patient.")
 
 # ── Tabs ───────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4 = st.tabs([
@@ -511,6 +512,6 @@ st.divider()
 st.markdown("""
 <div style='text-align:center; color:#888; padding:0.5rem;'>
 <p><strong>Cr³⁺ Phosphor ANN Expert System</strong> —
-Snežana Đurković | INN Vinča 2026 | OMAS Group</p>
+Snežana Đurković · Prof. Dr. M. Dramićanin · Dr. Z. Ristić | INN Vinča 2026 | OMAS Group</p>
 </div>
 """, unsafe_allow_html=True)
